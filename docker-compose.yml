@@ -23,8 +23,8 @@ services:
       - PMA_ARBITRARY=${PMA_ARBITRARY:-0}
       - PMA_HOST=${PMA_HOST:-db}
       - PMA_PORT=${PMA_PORT:-3306} 
-      - PMA_USER=${PMA_USER:-root}
-      - PMA_PASSWORD=${PMA_PASSWORD:-password}
+      # - PMA_USER=${PMA_USER:-root}
+      # - PMA_PASSWORD=${MYSQL_ROOT_PASSWORD:-root_password}
     ports:
       - "${PORT_PHPMYADMIN:-8882}:80"
     volumes:
